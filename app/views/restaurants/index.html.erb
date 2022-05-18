@@ -1,0 +1,6 @@
+<h1>BAD YELP</h1>
+<ul>
+<% @restaurants.each do |restaurant| %>
+  <li><%=link_to restaurant.name, restaurant_path(restaurant), class: "btn btn-primary" %></li>
+<% end %>
+</ul>
